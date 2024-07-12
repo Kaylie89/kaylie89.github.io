@@ -1,149 +1,51 @@
-@import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Unit 2: Users, Assessments and the Risk Management Process</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
 
-/* Reset and base styles */
+<div id="page-wrapper">
+    <div id="wrapper">
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+        <!-- Key Concepts Covered -->
+        <section class="panel spotlight">
+            <div class="content">
+                <h2 class="major">Unit 2: Users, Assessments and the Risk Management Process</h2>
+                <p>This unit focused on understanding the Risk Management Process (RMP) and the effects of different assessment types (Qualitative vs. Quantitative). It also emphasized the importance of user participation in the risk management process.</p>
+                <h3>Key Concepts Covered</h3>
+                <ul>
+                    <li><strong>Risk Management Process (RMP):</strong> An in-depth look at the steps involved in managing risks.</li>
+                    <li><strong>Assessment Types:</strong> Comparing qualitative and quantitative assessments.</li>
+                    <li><strong>User Participation:</strong> The role and impact of users in RMP.</li>
+                </ul>
+                <p>The seminar on user participation in RMP provided valuable insights into how user involvement can influence risk management outcomes. Below is the reflective piece on this unit:</p>
+            </div>
+            <div class="image filtered tinted" data-position="top left">
+                <img src="../../images/pic02.jpg" alt="" />
+            </div>
+        </section>
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+        <!-- Reflective Piece -->
+        <section class="panel color2">
+            <div class="intro">
+                <h2 class="major">Reflection on Unit 2</h2>
+                <p>This unit deepened my understanding of the Risk Management Process by comparing qualitative and quantitative assessments. The seminar highlighted the crucial role of user participation in effective risk management. I learned that involving users can lead to more comprehensive risk assessments and better implementation of mitigation strategies. This knowledge is vital for my development as a security professional.</p>
+            </div>
+        </section>
+        
+    </div>
+</div>
 
-body {
-	line-height: 1;
-}
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/main.js"></script>
 
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-body {
-	-webkit-text-size-adjust: none;
-}
-
-mark {
-	background-color: transparent;
-	color: inherit;
-}
-
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
-
-input, select, textarea {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-}
-
-/* Main CSS */
-#wrapper {
-	display: flex;
-	flex-direction: column;
-}
-
-.panel {
-	margin-bottom: 20px; /* Ensure spacing between sections */
-}
-
-/* Page */
-
-@-moz-keyframes load-spinner {
-	0% {
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-
-	100% {
-		-moz-transform: rotate(360deg);
-		-webkit-transform: rotate(360deg);
-		-ms-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
-
-@-webkit-keyframes load-spinner {
-	0% {
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-
-	100% {
-		-moz-transform: rotate(360deg);
-		-webkit-transform: rotate(360deg);
-		-ms-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
-
-@-ms-keyframes load-spinner {
-	0% {
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-
-	100% {
-		-moz-transform: rotate(360deg);
-		-webkit-transform: rotate(360deg);
-		-ms-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes load-spinner {
-	0% {
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-
-	100% {
-		-moz-transform: rotate(360deg);
-		-webkit-transform: rotate(360deg);
-		-ms-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
-
-/* Other keyframes, media queries, and styles */
+</body>
+</html>
