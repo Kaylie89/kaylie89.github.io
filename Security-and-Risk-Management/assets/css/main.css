@@ -81,6 +81,7 @@ body, input, select, textarea {
 #wrapper {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .panel {
@@ -88,6 +89,7 @@ body, input, select, textarea {
     background: #f4f4f4; /* Background color for the panels */
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .panel p {
@@ -109,6 +111,7 @@ body, input, select, textarea {
 
 .panel h2, .panel h3 {
     color: #333;
+    margin-bottom: 10px;
 }
 
 .panel.color2 {
