@@ -110,6 +110,8 @@ input, select, textarea {
 
 .panel p {
 	margin-bottom: 10px;
+	font-size: 1em;
+	line-height: 1.6;
 }
 
 .panel ul {
@@ -119,6 +121,8 @@ input, select, textarea {
 
 .panel ul li {
 	margin-bottom: 5px;
+	font-size: 1em;
+	line-height: 1.6;
 }
 
 .panel .image {
