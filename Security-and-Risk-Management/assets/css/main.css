@@ -1,4 +1,4 @@
-@import url(fontawesome-all.min.css);
+@import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
 
 /*
@@ -80,10 +80,63 @@ input, select, textarea {
 #wrapper {
 	display: flex;
 	flex-direction: column;
+	align-items: center; /* Center content horizontally */
 }
 
 .panel {
 	margin-bottom: 20px; /* Ensure spacing between sections */
+	padding: 20px; /* Add padding for content */
+	border: 1px solid #e0e0e0; /* Add border for visibility */
+	border-radius: 8px; /* Rounded corners */
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow for depth */
+	background: #fff; /* Ensure background color is white */
+	width: 80%; /* Set a max width for panels */
+	max-width: 800px; /* Ensure panels are not too wide */
+}
+
+.panel .content, .panel .intro {
+	margin-bottom: 20px; /* Ensure spacing between content */
+}
+
+.panel h2.major {
+	font-size: 1.75em;
+	margin-bottom: 10px;
+}
+
+.panel h3 {
+	font-size: 1.25em;
+	margin-bottom: 10px;
+}
+
+.panel p {
+	margin-bottom: 10px;
+}
+
+.panel ul {
+	margin-bottom: 10px;
+	padding-left: 20px; /* Indent the list */
+}
+
+.panel ul li {
+	margin-bottom: 5px;
+}
+
+.panel .image {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.panel .image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px; /* Rounded corners for images */
+}
+
+.is-preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
 }
 
 /* Page */
@@ -93,9 +146,53 @@ input, select, textarea {
 		-moz-transform: rotate(0deg);
 		-webkit-transform: rotate(0deg);
 		-ms-transform: rotate(0deg);
-		transform: rotate(0deg;
+		transform: rotate(0deg);
 	}
+	100% {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
 
+@-webkit-keyframes load-spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes load-spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes load-spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
 	100% {
 		-moz-transform: rotate(360deg);
 		-webkit-transform: rotate(360deg);
@@ -105,4 +202,3 @@ input, select, textarea {
 }
 
 /* Other keyframes, media queries, and styles */
-...
