@@ -10,14 +10,24 @@
         .panel.spotlight {
             display: flex;
             flex-wrap: wrap;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/pic02.jpg');
+            background-size: cover;
+            background-position: center;
         }
         .panel.spotlight .content {
             flex: 1 1 100%;
             min-width: 300px;
+            background: rgba(0, 0, 0, 0.5); /* Same background color to ensure consistency */
+            color: white;
         }
         .panel.spotlight .image {
             flex: 1 1 100%;
             min-width: 300px;
+            display: none; /* Hide the image to use as background */
+        }
+        .panel.color2 {
+            background: rgba(255, 87, 87, 0.8); /* Adjust the transparency to match the design */
+            color: white;
         }
     </style>
 </head>
@@ -45,9 +55,6 @@
                 <p><strong>Roles:</strong> Each member will have 50/50 of the workload and co-operate at least twice per week accordingly. The professor can contact any of the two members for co-ordination and updates.</p>
                 <p><strong>Consequences:</strong> Address issues of non-performance or non-compliance with expectations directly in team meetings. Implement a two-strike policy—after one warning, a meeting with a faculty advisor will be scheduled to discuss the member’s future on the team. If a dispute persists, escalate to a faculty advisor for mediation.</p>
                 <p><strong>Signatures:</strong> Kaylie Watts (07/05/24), Marcos Brando Paredes (07/05/24)</p>
-            </div>
-            <div class="image filtered tinted" data-position="top left">
-                <img src="../../images/pic02.jpg" alt="" />
             </div>
         </section>
 
