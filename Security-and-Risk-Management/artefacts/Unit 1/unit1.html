@@ -11,9 +11,27 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            gap: 20px; /* Add some gap between the sections */
         }
         .panel {
-            width: 45%;
+            flex: 1;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: white;
+        }
+        .panel h2 {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        .panel p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 1em;
+        }
+        .panel.color2 {
+            background-color: #f06449; /* Original color for distinction */
+            color: white; /* Ensure text is readable */
         }
     </style>
 </head>
