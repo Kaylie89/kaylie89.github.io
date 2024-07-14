@@ -5,55 +5,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="../../assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" />
     <style>
-        body {
-            background-color: #f5f5f5; /* Light gray background */
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 20px;
-            gap: 20px; /* Add some gap between the sections */
-            flex-wrap: wrap; /* Allow the panels to wrap on small screens */
-        }
         .panel {
-            flex: 1;
             padding: 20px;
-            border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: inherit; /* Use the existing background color */
+            overflow: auto; /* Ensure content overflows gracefully */
         }
-        .panel:first-child {
-            background-color: #3a3a3a; /* Gradient background */
-            color: white; /* Ensure text is readable */
-        }
-        .panel.color2 {
-            background-color: #f06449; /* Original color for distinction */
-            color: white; /* Ensure text is readable */
+        .panel .content {
+            display: block;
         }
         .panel h2 {
             font-size: 1.5em;
             margin-bottom: 1em;
-            color: white; /* Ensure headings are readable */
         }
-        .panel p, .panel ul {
+        .panel p {
             font-size: 1em;
             line-height: 1.6;
             margin-bottom: 1em;
-            color: white; /* Ensure text is readable */
-        }
-        .panel ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .panel ul li {
-            margin-bottom: 0.5em;
-        }
-        .panel ul li strong {
-            display: block;
         }
     </style>
 </head>
@@ -62,30 +33,28 @@
 <div id="page-wrapper">
     <div id="wrapper">
 
-        <div class="container">
-            <!-- Panel (Spotlight) -->
-            <section class="panel spotlight medium" id="first">
-                <div class="content">
-                    <h2 class="major">Cyber Risk Rangers Team Contract</h2>
-                    <p><strong>Team Name:</strong> Cyber Risk Rangers</p>
-                    <p><strong>Goals:</strong> Successfully analyse and present a comprehensive risk assessment and digital transformation strategy for Pampered Pets.</p>
-                    <p><strong>Expectations:</strong> Full participation in scheduled meetings unless excused for valid reasons, active involvement in discussions and decision-making processes, regular updates via email or group chat at least twice a week, and commitment to high-quality, thoroughly researched and well-prepared deliverables.</p>
-                    <p><strong>Policies & Procedures:</strong> Complete all assigned readings and preliminary research before meetings, use brainstorming sessions at the beginning of each phase to gather and refine ideas, and regularly review progress against milestones and adjust plans as necessary to stay on target.</p>
-                    <p><strong>Roles:</strong> Each member will have 50/50 of the workload and co-operate at least twice per week accordingly. The professor can contact any of the two members for co-ordination and updates.</p>
-                    <p><strong>Consequences:</strong> Address issues of non-performance or non-compliance with expectations directly in team meetings. Implement a two-strike policy—after one warning, a meeting with a faculty advisor will be scheduled to discuss the member’s future on the team. If a dispute persists, escalate to a faculty advisor for mediation.</p>
-                    <p><strong>Signatures:</strong> Kaylie Watts (07/05/24), Marcos Brando Paredes (07/05/24)</p>
-                </div>
-            </section>
+        <!-- Panel (Spotlight) -->
+        <section class="panel spotlight medium right" id="first">
+            <div class="content span-7">
+                <h2 class="major">Cyber Risk Rangers Team Contract</h2>
+                <p><strong>Team Name:</strong> Cyber Risk Rangers</p>
+                <p><strong>Goals:</strong> Successfully analyse and present a comprehensive risk assessment and digital transformation strategy for Pampered Pets.</p>
+                <p><strong>Expectations:</strong> Full participation in scheduled meetings unless excused for valid reasons, active involvement in discussions and decision-making processes, regular updates via email or group chat at least twice a week, and commitment to high-quality, thoroughly researched and well-prepared deliverables.</p>
+                <p><strong>Policies & Procedures:</strong> Complete all assigned readings and preliminary research before meetings, use brainstorming sessions at the beginning of each phase to gather and refine ideas, and regularly review progress against milestones and adjust plans as necessary to stay on target.</p>
+                <p><strong>Roles:</strong> Each member will have 50/50 of the workload and co-operate at least twice per week accordingly. The professor can contact any of the two members for co-ordination and updates.</p>
+                <p><strong>Consequences:</strong> Address issues of non-performance or non-compliance with expectations directly in team meetings. Implement a two-strike policy—after one warning, a meeting with a faculty advisor will be scheduled to discuss the member’s future on the team. If a dispute persists, escalate to a faculty advisor for mediation.</p>
+                <p><strong>Signatures:</strong> Kaylie Watts (07/05/24), Marcos Brando Paredes (07/05/24)</p>
+            </div>
+        </section>
 
-            <!-- Reflective Piece -->
-            <section class="panel color2">
-                <div class="intro">
-                    <h2 class="major">Reflection on Unit 1</h2>
-                    <p>This unit provided foundational knowledge in Security and Risk Management. The team contract exercise highlighted the importance of clear communication and defined roles in successful project management. Through the readings and activities, I learned how to assess and mitigate risks using both qualitative and quantitative approaches. This unit has significantly contributed to my understanding of risk management in the context of information security.</p>
-                </div>
-            </section>
-        </div>
-
+        <!-- Reflective Piece -->
+        <section class="panel color2">
+            <div class="intro">
+                <h2 class="major">Reflection on Unit 1</h2>
+                <p>This unit provided foundational knowledge in Security and Risk Management. The team contract exercise highlighted the importance of clear communication and defined roles in successful project management. Through the readings and activities, I learned how to assess and mitigate risks using both qualitative and quantitative approaches. This unit has significantly contributed to my understanding of risk management in the context of information security.</p>
+            </div>
+        </section>
+        
     </div>
 </div>
 
