@@ -9,21 +9,14 @@
     <style>
         .container {
             display: flex;
+            gap: 20px; /* Add some gap between the sections */
             flex-wrap: nowrap; /* Keep panels on the same line */
-            gap: 20px;
         }
         .panel {
             flex: 1;
             padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            background-color: white;
-            color: #333;
-            overflow: auto;
-        }
-        .color2 {
-            background-color: #f06449;
-            color: white;
+            min-height: 800px; /* Increase the height to fit the content */
+            overflow: auto; /* Ensure content overflows gracefully */
         }
         .content {
             display: block;
@@ -37,8 +30,8 @@
 
         <div class="container">
             <!-- Panel (Spotlight) -->
-            <section class="panel spotlight medium" id="first">
-                <div class="content">
+            <section class="panel spotlight medium right" id="first">
+                <div class="content span-7">
                     <h2 class="major">Cyber Risk Rangers Team Contract</h2>
                     <p><strong>Team Name:</strong> Cyber Risk Rangers</p>
                     <p><strong>Goals:</strong> Successfully analyse and present a comprehensive risk assessment and digital transformation strategy for Pampered Pets.</p>
