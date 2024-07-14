@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="../../assets/css/main.css" />
     <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
     <style>
+        body {
+            background-color: #f5f5f5; /* Light gray background */
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
         .container {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            padding: 20px;
             gap: 20px; /* Add some gap between the sections */
+            flex-wrap: wrap; /* Allow the panels to wrap on small screens */
         }
         .panel {
             flex: 1;
             padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            background-color: white;
-            min-height: 100px; /* Ensures a minimum height */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .panel:first-child {
+            background-color: #3a3a3a; /* Gradient background */
+            color: white; /* Ensure text is readable */
         }
         .panel.color2 {
             background-color: #f06449; /* Original color for distinction */
@@ -28,21 +37,23 @@
         .panel h2 {
             font-size: 1.5em;
             margin-bottom: 1em;
+            color: white; /* Ensure headings are readable */
         }
-        .panel p {
+        .panel p, .panel ul {
             font-size: 1em;
             line-height: 1.6;
             margin-bottom: 1em;
+            color: white; /* Ensure text is readable */
         }
-        .content {
-            display: flex;
-            flex-direction: column;
+        .panel ul {
+            list-style: none;
+            padding-left: 0;
         }
-        .content span-7 {
-            flex: 1;
+        .panel ul li {
+            margin-bottom: 0.5em;
         }
-        .image {
-            display: none; /* Hide the image section */
+        .panel ul li strong {
+            display: block;
         }
     </style>
 </head>
@@ -54,7 +65,7 @@
         <div class="container">
             <!-- Panel (Spotlight) -->
             <section class="panel spotlight medium" id="first">
-                <div class="content span-7">
+                <div class="content">
                     <h2 class="major">Cyber Risk Rangers Team Contract</h2>
                     <p><strong>Team Name:</strong> Cyber Risk Rangers</p>
                     <p><strong>Goals:</strong> Successfully analyse and present a comprehensive risk assessment and digital transformation strategy for Pampered Pets.</p>
