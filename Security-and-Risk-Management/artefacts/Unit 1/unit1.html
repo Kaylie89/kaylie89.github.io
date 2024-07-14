@@ -11,16 +11,17 @@
             display: flex;
             gap: 20px; /* Add some gap between the sections */
             flex-wrap: nowrap; /* Keep panels on the same line */
+            align-items: stretch; /* Ensure panels stretch to the height of the tallest one */
         }
         .panel {
             flex: 1;
             padding: 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            overflow: auto; /* Ensure content overflows gracefully */
+            overflow: hidden; /* Hide overflow */
         }
-        .panel .content {
-            height: auto;
+        .content {
+            display: block;
         }
     </style>
 </head>
