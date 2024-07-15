@@ -10,30 +10,28 @@
         .panel.spotlight {
             display: flex;
             flex-wrap: wrap;
-            background-image: url('../../images/pic02.jpg'); /* Path to the uploaded image */
             background-size: cover;
-            background-position: center;   
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('../../images/pic02.jpg'); /* Path to the uploaded image */
         }
         .panel.spotlight .content {
-            flex: 1 1 auto;
+            flex: 1 1 100%;
             min-width: 300px;
             padding: 20px;
         }
         .panel.spotlight .image {
-           display: none; /* Hide image since it's used as background */
+            display: none; /* Hide image since it's used as background */
         }
         .panel.color2 {
-            flex: 1 1 auto;
+            flex: 1 1 100%;
             min-width: 300px;
             padding: 20px;
         }
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-        }
         @media (min-width: 800px) {
-            .wrapper {
-                flex-direction: row;
+            .panel.spotlight .content,
+            .panel.color2 {
+                flex: 1 1 50%;
             }
         }
     </style>
@@ -55,9 +53,6 @@
                     <li><strong>Guides and Cookbooks:</strong> Resources to assist in choosing and applying threat modelling frameworks.</li>
                 </ul>
                 <p>The seminar provided practical insights into threat modelling techniques and their application in real-world scenarios. Below is the reflective piece on this unit:</p>
-            </div>
-            <div class="image filtered tinted" data-position="top left">
-                <img src="../../images/pic02.jpg" alt="" />
             </div>
         </section>
 
