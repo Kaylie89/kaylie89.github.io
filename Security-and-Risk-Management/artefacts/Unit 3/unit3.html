@@ -9,13 +9,13 @@
     <style>
         .panel.spotlight {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             background-image: url('../../images/pic02.jpg'); /* Path to the uploaded image */
             background-size: cover;
             background-position: center;   
         }
         .panel.spotlight .content {
-            flex: 1 1 60%;
+            flex: 1;
             min-width: 300px;
              padding: 20px;
         }
@@ -25,7 +25,7 @@
             display: none; /* Hide image since it's used as background */
         }
         .panel.color2 {
-            flex: 1 1 40%;
+            flex: 1;
             min-width: 300px;
             padding: 20px;
         }
