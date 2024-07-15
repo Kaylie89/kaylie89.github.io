@@ -27,6 +27,15 @@
             min-width: 300px;
             padding: 20px;
         }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        @media (min-width: 800px) {
+            .wrapper {
+                flex-direction: row;
+            }
+        }
     </style>
 </head>
 <body class="is-preload">
