@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="../../assets/css/main.css" />
     <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+    <style>
+        .panel {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .panel > .content, .panel > .intro {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .panel > .content {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .panel > .intro {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background: #ff5a5f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .button:hover {
+            background: #ff3b3f;
+        }
+    </style>
 </head>
 <body class="is-preload">
 
